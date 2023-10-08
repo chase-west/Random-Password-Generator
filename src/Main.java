@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Create needed objects
-        StringBuilder sb = new StringBuilder();
+        //Create needed object
         Random random = new Random();
 
         //Get user input
@@ -20,7 +19,7 @@ public class Main {
         String finalPassword = createInts(intPasswordLength) + createString(stringPasswordLength) + createSymbols(symbolPasswordLength);
 
         //Print shuffled password
-        System.out.println(shufflePassword(finalPassword, random).toString());
+        System.out.println(shufflePassword(finalPassword, random));
     }
 
 
